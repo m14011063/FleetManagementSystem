@@ -4,5 +4,5 @@ public interface Calculable {
 
   double calculateDepreciation();
 
-  void calculateOperatingCost();
+  double calculateOperatingCost();
 }

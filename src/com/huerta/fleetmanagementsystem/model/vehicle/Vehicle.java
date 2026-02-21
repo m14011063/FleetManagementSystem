@@ -99,5 +99,5 @@ public abstract class Vehicle implements Assignable, Calculable, Maintainable, R
     return 0;
   }
 
-  public abstract void calculateOperatingCost();
+  public abstract double calculateOperatingCost();
 }

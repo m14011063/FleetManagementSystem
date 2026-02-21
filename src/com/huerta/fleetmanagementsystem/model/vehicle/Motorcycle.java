@@ -19,7 +19,7 @@ public class Motorcycle extends Vehicle {
   }
 
   @Override
-  public void calculateOperatingCost() {
+  public double calculateOperatingCost() {
     // TODO Auto-generated method stub
     throw new UnsupportedOperationException("Unimplemented method 'calculateOperatingCost'");
   }
