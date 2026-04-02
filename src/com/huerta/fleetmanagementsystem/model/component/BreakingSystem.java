@@ -22,10 +22,10 @@ import lombok.Getter;
 public class BreakingSystem {
 
   /** The brake mechanism type (disc or drum). */
-  private BreakeType brakeType;
+  private BreakeType brakeType; // tipo de freno
 
   /** Current operational status (e.g. "Good", "Worn"). */
-  private String status;;
+  private String status;; // estado
 
   /**
    * Default constructor — creates a braking system with no initial values.

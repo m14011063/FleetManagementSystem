@@ -7,7 +7,7 @@ package com.huerta.fleetmanagementsystem.model.enums;
  */
 public enum ServiceType {
   /** Urban routes within a single city. */
-  CITY,
+  CITY, // ciudad
   /** Long-distance routes between cities. */
-  INTERCITY
+  INTERCITY // interurbano
 }

@@ -7,7 +7,7 @@ package com.huerta.fleetmanagementsystem.model.enums;
  */
 public enum MaintenanceType {
   /** Scheduled maintenance aimed at preventing failures. */
-  PREVENTIVE,
+  PREVENTIVE, // preventivo
   /** Unscheduled maintenance performed to fix an existing fault. */
-  CORRECTIVE
+  CORRECTIVE // correctivo
 }

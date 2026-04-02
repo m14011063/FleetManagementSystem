@@ -22,10 +22,10 @@ import com.huerta.fleetmanagementsystem.model.enums.FuelType;
 public class Car extends Vehicle {
 
   /** Number of seats (≥ 1). */
-  private int seatingCapacity;
+  private int seatingCapacity; // capacidad de asientos
 
   /** Fuel / energy source. */
-  private FuelType fuelType;
+  private FuelType fuelType; // tipo de combustible
 
   /**
    * Creates a new car.

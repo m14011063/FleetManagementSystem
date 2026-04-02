@@ -20,10 +20,10 @@ package com.huerta.fleetmanagementsystem.model.vehicle;
 public class Truck extends HeavyVehicle {
 
   /** Maximum payload in kilograms (≥ 0). */
-  private int payloadCapacity;
+  private int payloadCapacity; // capacidad de carga
 
   /** Number of axles (≥ 2). */
-  private int axleCount;
+  private int axleCount; // número de ejes
 
   /**
    * Creates a new truck.

@@ -7,7 +7,7 @@ package com.huerta.fleetmanagementsystem.model.enums;
  */
 public enum TransmissionType {
   /** Driver-operated clutch and gear lever. */
-  MANUAL,
-  /** Gear changes handled by the vehicle’s control system. */
-  AUTOMATIC
+  MANUAL, // manual
+  /** Gear changes handled by the vehicle's control system. */
+  AUTOMATIC // automático
 }

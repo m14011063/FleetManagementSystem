@@ -13,7 +13,7 @@ package com.huerta.fleetmanagementsystem.model.vehicle;
 public class Motorcycle extends Vehicle {
 
   /** Engine displacement in cubic centimetres (≥ 1). */
-  private int engineDisplacement;
+  private int engineDisplacement; // cilindrada del motor
 
   /**
    * Creates a new motorcycle.

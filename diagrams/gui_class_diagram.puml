@@ -34,6 +34,9 @@ package "gui" {
     --
     + VehiclePanel(service : FleetService)
     - addVehicle() : void
+    - showFleetReport() : void
+    - showVehicleSpecificDetails() : void
+    - showCommercialLicenseVehicles() : void
     - refreshTable() : void
   }
 
@@ -82,6 +85,9 @@ package "service" {
     + addDriver(d : Driver) : void
     + assignDriver(v : Vehicle, d : Driver) : void
     + addMaintenance(v : Vehicle, r : MaintenanceRecord) : void
+    + generateFleetReports() : List<String>
+    + getVehicleSpecificDetails() : List<String>
+    + getVehiclesRequiringCommercialLicense() : List<Vehicle>
     + totalOperatingCost() : double
   }
 }
@@ -103,8 +109,6 @@ package "model.fleet" {
     + removeVehicle(vehicle : Vehicle) : boolean
     + addDriver(driver : Driver) : void
     + removeDriver(driver : Driver) : boolean
-    + assignDriverToVehicle(driver : Driver, vehicle : Vehicle) : void
-    + releaseDriverFromVehicle(vehicle : Vehicle) : void
     + registerMaintenance(vehicle : Vehicle, record : MaintenanceRecord) : void
     + calculateTotalOperatingCost() : double
     + generateFleetReports() : List<String>
@@ -141,17 +145,17 @@ MainWindow *-down- "1" VehiclePanel : creates >
 MainWindow *-down- "1" DriverPanel : creates >
 MainWindow *-down- "1" AssignmentPanel : creates >
 MainWindow *-down- "1" MaintenancePanel : creates >
-FleetService *-down- "1" Fleet : owns >
-Fleet *-down- "*" Vehicle : contains >
-Fleet *-down- "*" Driver : contains >
 
 ' ============================================================
 '  Aggregation  (empty diamond ◇)
-'  The panels share a reference to FleetService; they do not own it.
+'  The part can exist independently of the whole.
 ' ============================================================
 VehiclePanel o-right- "1" FleetService : uses >
 DriverPanel o-right- "1" FleetService : uses >
 AssignmentPanel o-right- "1" FleetService : uses >
 MaintenancePanel o-right- "1" FleetService : uses >
+FleetService o-down- "1" Fleet : delegates to >
+Fleet o-down- "*" Vehicle : aggregates >
+Fleet o-down- "*" Driver : aggregates >
 
 @enduml

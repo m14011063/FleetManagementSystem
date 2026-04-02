@@ -56,51 +56,51 @@ import lombok.Getter;
 public abstract class Vehicle implements Assignable, Calculable, Maintainable, Reportable {
 
   /** Kilometres per depreciation block used in the mileage-based formula. */
-  private static final double MILEAGE_BLOCK_KM = 10000.0;
+  private static final double MILEAGE_BLOCK_KM = 10000.0; // bloque de kilometraje
 
   /** Depreciation fraction charged per {@link #MILEAGE_BLOCK_KM} (1 %). */
-  private static final double DEPRECIATION_PER_MILEAGE_BLOCK = 0.01;
+  private static final double DEPRECIATION_PER_MILEAGE_BLOCK = 0.01; // depreciación por bloque de kilometraje
 
   /** Unique numeric identifier (≥ 0). */
-  private long id;
+  private long id; // identificador
 
   /** Official licence-plate string. */
-  private String licensePlate;
+  private String licensePlate; // matrícula
 
   /** Manufacturer / brand name. */
-  private String make;
+  private String make; // marca
 
   /** Model name. */
-  private String model;
+  private String model; // modelo
 
   /** Manufacturing year (1886–next year). */
-  private int year;
+  private int year; // año
 
   /** Total kilometres travelled (≥ 0). */
-  private double mileage;
+  private double mileage; // kilometraje
 
   /** Original purchase price. */
-  private double purchasePrice;
+  private double purchasePrice; // precio de compra
 
   /** Currently assigned driver (may be {@code null}). Aggregation. */
-  private Driver driver;
+  private Driver driver; // conductor
 
   /** History of maintenance events. Aggregation of records. */
-  private List<MaintenanceRecord> maintenanceRecords;
+  private List<MaintenanceRecord> maintenanceRecords; // registros de mantenimiento
 
   /** Engine component. <b>Composition</b> — created and owned by this vehicle. */
-  private Engine engine;
+  private Engine engine; // motor
 
   /** Transmission component. <b>Composition</b> — created and owned by this vehicle. */
-  private Transmission transmission;
+  private Transmission transmission; // transmisión
 
   /** Braking-system component. <b>Composition</b> — created and owned by this vehicle. */
-  private BreakingSystem breakingSystem;
+  private BreakingSystem breakingSystem; // sistema de frenado
 
   /**
    * Default no-arg constructor.
    */
-  public Vehicle() {
+  public Vehicle() {// este construct// or da apertura a perder la composicion
   }
 
   /**

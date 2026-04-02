@@ -15,13 +15,13 @@ package com.huerta.fleetmanagementsystem.model.component;
 public class Engine {
 
   /** Textual description of the engine type (e.g. "V6", "Inline-4"). */
-  private String engineType;
+  private String engineType; // tipo de motor
 
   /** Engine displacement (e.g. "2.0L"). */
-  private String displacement;
+  private String displacement; // cilindrada
 
   /** Engine power output (e.g. "150 HP"). */
-  private String horsepower;
+  private String horsepower; // caballos de fuerza
 
   /**
    * Default constructor — creates an engine with no initial values.

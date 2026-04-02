@@ -26,7 +26,7 @@ import lombok.Getter;
 public abstract class HeavyVehicle extends Vehicle {
 
   /** Gross vehicle weight in metric tons (≥ 0). */
-  private double grossVehicleWeight;
+  private double grossVehicleWeight; // peso bruto del vehículo
 
   /**
    * Creates a heavy vehicle.

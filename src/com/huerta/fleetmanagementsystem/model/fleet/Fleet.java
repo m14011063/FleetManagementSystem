@@ -43,10 +43,10 @@ import com.huerta.fleetmanagementsystem.model.vehicle.Vehicle;
 public class Fleet {
 
   /** Vehicles belonging to this fleet (<b>aggregation</b>). */
-  private final List<Vehicle> vehicles;
+  private final List<Vehicle> vehicles; // vehículos
 
   /** Drivers available in this fleet (<b>aggregation</b>). */
-  private final List<Driver> drivers;
+  private final List<Driver> drivers; // conductores
 
   /**
    * Creates an empty fleet.
@@ -63,8 +63,8 @@ public class Fleet {
    * @param drivers  initial drivers; {@code null} yields an empty list
    */
   public Fleet(List<Vehicle> vehicles, List<Driver> drivers) {
-    this.vehicles = (vehicles == null) ? new ArrayList<>() : new ArrayList<>(vehicles);
-    this.drivers = (drivers == null) ? new ArrayList<>() : new ArrayList<>(drivers);
+    this.vehicles = (vehicles == null) ? new ArrayList<>(vehicles) : new ArrayList<>(vehicles);
+    this.drivers = (drivers == null) ? new ArrayList<>(drivers) : new ArrayList<>(drivers);
   }
 
   /**

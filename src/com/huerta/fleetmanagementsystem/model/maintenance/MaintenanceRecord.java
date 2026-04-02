@@ -23,16 +23,16 @@ import lombok.Getter;
 public class MaintenanceRecord {
 
   /** Date on which the maintenance was performed. */
-  private LocalDate date;
+  private LocalDate date; // fecha
 
   /** Category of maintenance (preventive or corrective). */
-  private MaintenanceType type;
+  private MaintenanceType type; // tipo
 
   /** Free-text description of the work done. */
-  private String description;
+  private String description; // descripción
 
   /** Monetary cost of the maintenance (≥ 0). */
-  private double cost;
+  private double cost; // costo
 
   /**
    * Creates a new maintenance record.

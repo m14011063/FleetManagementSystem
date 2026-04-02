@@ -19,13 +19,13 @@ import lombok.Getter;
 public class Driver {
 
   /** The driver’s full name. */
-  private String fullName;
+  private String fullName; // nombre completo
 
   /** Unique driving-licence identifier. */
-  private String licenseNumber;
+  private String licenseNumber; // número de licencia
 
   /** Number of years of professional driving experience (≥ 0). */
-  private int yearsOfExperience;
+  private int yearsOfExperience; // años de experiencia
 
   /**
    * Creates a new driver.

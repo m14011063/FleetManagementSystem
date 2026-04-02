@@ -8,11 +8,11 @@ package com.huerta.fleetmanagementsystem.model.enums;
  */
 public enum FuelType {
   /** Conventional petrol engine. */
-  GASOLINE,
+  GASOLINE, // gasolina
   /** Diesel combustion engine. */
-  DIESEL,
+  DIESEL, // diésel
   /** Fully electric powertrain. */
-  ELECTRIC,
+  ELECTRIC, // eléctrico
   /** Combined combustion + electric powertrain. */
-  HYBRID
+  HYBRID // híbrido
 }

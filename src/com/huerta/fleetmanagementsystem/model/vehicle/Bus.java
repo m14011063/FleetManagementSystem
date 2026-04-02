@@ -17,10 +17,10 @@ import com.huerta.fleetmanagementsystem.model.enums.ServiceType;
 public class Bus extends HeavyVehicle {
 
   /** Maximum passenger capacity (≥ 1). */
-  private int passengerCapacity;
+  private int passengerCapacity; // capacidad de pasajeros
 
   /** Route service type (city or intercity). */
-  private ServiceType serviceType;
+  private ServiceType serviceType; // tipo de servicio
 
   /**
    * Creates a new bus.

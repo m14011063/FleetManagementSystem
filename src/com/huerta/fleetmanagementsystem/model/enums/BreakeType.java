@@ -7,7 +7,7 @@ package com.huerta.fleetmanagementsystem.model.enums;
  */
 public enum BreakeType {
   /** Disc-based braking mechanism. */
-  DISC,
+  DISC, // disco
   /** Drum-based braking mechanism. */
-  DRUM
+  DRUM // tambor
 }

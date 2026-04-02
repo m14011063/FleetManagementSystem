@@ -17,10 +17,10 @@ import com.huerta.fleetmanagementsystem.model.enums.TransmissionType;
 public class Transmission {
 
   /** Number of gears in this transmission (≥ 1). */
-  private int numberOfGears;
+  private int numberOfGears; // número de marchas
 
   /** The shift type (manual or automatic). */
-  private TransmissionType transmissionType;
+  private TransmissionType transmissionType; // tipo de transmisión
 
   /**
    * Default constructor — creates a transmission with no initial values.
